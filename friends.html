@@ -1,0 +1,191 @@
+<!--
+Copyright (c) 2020 takisai
+Released under the MIT license
+https://opensource.org/licenses/mit-license.php
+-->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>John's Website</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <meta name="keywords" content="website,prototype">
+        <meta name="description" content="ウェブページのテスト用です。">
+    </head>
+    <body>
+        <header>
+            <a id="title" href="index.html">John's Website</a>
+            <input type="checkbox" id="toggle" autocomplete="off">
+            <label for="toggle" id="toggle_open"><span></span></label>
+            <label for="toggle" id="cover"></label>
+            <nav>
+                <label for="toggle" id="toggle_close"><span></span></label>
+                <ul id="navigation_list">
+                    <li><a href="index.html">メインページ</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li class="here"><a>友達紹介</a>
+                        <ul id="table_of_contents">
+                            <li><a href="#group_a">グループA</a></li>
+                            <li><a href="#group_b">グループB</a></li>
+                            <li><a href="#group_c">グループC</a></li>
+                            <li><a href="#group_d">グループD</a></li>
+                            <li><a href="#group_e">グループE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="olympics.html">オリンピック</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="subject">
+            友達紹介
+        </div>
+        <div class="content" id="group_a">
+            <h2 class="lightred">グループA</h2>
+            <p>数字が並んでいます。</p>
+            <h3>小さい数</h3>
+            <table class="lightred">
+                <tbody>
+                    <tr>
+                        <td class="table_header">～10</td>
+                        <td>
+                            <div>
+                                <span>2(1の次)</span>
+                                <span>3(4の前)</span>
+                                <span>5(6の前)</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_header">～20</td>
+                        <td>
+                            <div>
+                                <span>13(12の次)</span>
+                                <span>14(13の次)</span>
+                                <span>18(19の前)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content" id="group_b">
+            <h2 class="lightyellow">グループB</h2>
+            <p>数字が並んでいます。一番の仲良しは26です。</p>
+            <h3>ちょっと大きい数</h3>
+            <table class="lightyellow">
+                <tbody>
+                    <tr>
+                        <td class="table_header">～30</td>
+                        <td>
+                            <div>
+                                <span>23(24の前)</span>
+                                <span>26(27の前)</span>
+                                <span>28(27の次)</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_header">～40</td>
+                        <td>
+                            <div>
+                                <span>35(36の前)</span>
+                                <span>36(35の次)</span>
+                                <span>37(36の次)</span>
+                                <span>40(39の次)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content" id="group_c">
+            <h2 class="lightgreen">グループC</h2>
+            <p>数字が並んでいます。グループAと同じです。</p>
+            <h3>小さい数</h3>
+            <table class="lightgreen">
+                <tbody>
+                    <tr>
+                        <td class="table_header">～10</td>
+                        <td>
+                            <div>
+                                <span>2(1の次)</span>
+                                <span>3(4の前)</span>
+                                <span>5(6の前)</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_header">～20</td>
+                        <td>
+                            <div>
+                                <span>13(12の次)</span>
+                                <span>14(13の次)</span>
+                                <span>18(19の前)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content" id="group_d">
+            <h2 class="lightblue">グループD</h2>
+            <p>数字が並んでいます。</p>
+            <h3>大きい数</h3>
+            <table class="lightblue">
+                <tbody>
+                    <tr>
+                        <td class="table_header">100～</td>
+                        <td>
+                            <div>
+                                <span>155</span>
+                                <span>584</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_header">1000～</td>
+                        <td>
+                            <div>
+                                <span>1512</span>
+                                <span>2590</span>
+                                <span>4018</span>
+                                <span>7112</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content" id="group_e">
+            <h2 class="lightgray">グループE</h2>
+            <p>数字が並んでいます。</p>
+            <h3>もっと大きい数</h3>
+            <span>12414</span>
+            <h3>さらに大きい数</h3>
+            <table class="lightgray">
+                <tbody>
+                    <tr>
+                        <td class="table_header"></td>
+                        <td>
+                            <div>
+                                <span>153516</span>
+                                <span>316427</span>
+                                <span>527384</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <div id="logos">
+                <a href="index.html" target="_blank" class="logo"><img src="image/facebook_logo.png"></a>
+                <a href="index.html" target="_blank" class="logo"><img src="image/instagram_logo.png"></a>
+                <a href="index.html" target="_blank" class="logo"><img src="image/twitter_logo.svg"></a>
+                <a href="index.html" target="_blank" class="logo"><img src="image/youtube_logo.png"></a>
+            </div>
+            <small>mail: <address>john.doe(at)example.com</address></small>
+        </footer>
+    </body>
+</html>

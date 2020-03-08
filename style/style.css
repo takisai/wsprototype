@@ -1,0 +1,364 @@
+/*
+Copyright (c) 2020 takisai
+Released under the MIT license
+https://opensource.org/licenses/mit-license.php
+*/
+
+:root {
+    --blue: #406dbf;
+    --gray: #6f798d;
+    --red: #d93f00;
+    --lightblue: #b4dfff;
+    --lightgray: #dadadc;
+    --lightgreen: #aae7c8;
+    --lightred: #ffcec5;
+    --lightyellow: #e1e100;
+    --background_red: #ffede9;
+    --darkwhite: #f0f1f1;
+    --content_margin_lr: 20px;
+    --image_border_radius: 6px;
+    --image_height: 360px;
+    --image_width: 540px;
+    --navigation_width: 240px;
+}
+
+@media (max-width: 300px) {
+    :root {
+        --navigation_width: calc(100vw - 60px);
+    }
+}
+
+@media (max-width: 556px) {
+    :root {
+        --image_border_radius: 0px;
+        --image_height: calc((100vw - 16px) / 3 + 180px);
+        --image_width: 100%;
+    }
+}
+
+@media (min-width: 720px) {
+    :root {
+        --content_margin_lr: calc((100vw - 720px) / 3 + 20px);
+    }
+}
+
+a, a:link, a:visited {
+    color: var(--blue);
+}
+
+a:active {
+    color: var(--red);
+}
+
+address {
+    display: inline;
+}
+
+body {
+    background: white;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+dd {
+    margin-left: 30px;
+}
+
+dd, p {
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+}
+
+footer {
+    background: var(--blue);
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer small {
+    display: block;
+    padding-bottom: 20px;
+}
+
+h2.lightblue {
+    border-bottom: 2px solid var(--lightblue);
+}
+
+h2.lightgray {
+    border-bottom: 2px solid var(--lightgray);
+}
+
+h2.lightgreen {
+    border-bottom: 2px solid var(--lightgreen);
+}
+
+h2.lightred {
+    border-bottom: 2px solid var(--lightred);
+}
+
+h2.lightyellow {
+    border-bottom: 2px solid var(--lightyellow);
+}
+
+header {
+    background: var(--blue);
+    height: 40px;
+    margin: 0px 0px 20px;
+    position: sticky;
+    top: 0px;
+}
+
+header nav {
+    background: white;
+    height: 100%;
+    left: calc(0px - var(--navigation_width));
+    padding-top: 40px;
+    position: fixed;
+    top: 0px;
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
+    width: var(--navigation_width);
+    z-index: 2;
+}
+
+label {
+    cursor: pointer;
+}
+
+table, td, tr {
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+
+tr {
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+}
+
+table.lightblue tr {
+    border-bottom: 1px solid var(--lightblue);
+    border-top: 1px solid var(--lightblue);
+}
+
+table.lightgray tr {
+    border-bottom: 1px solid var(--lightgray);
+    border-top: 1px solid var(--lightgray);
+}
+
+table.lightgreen tr {
+    border-bottom: 1px solid var(--lightgreen);
+    border-top: 1px solid var(--lightgreen);
+}
+
+table.lightred tr {
+    border-bottom: 1px solid var(--lightred);
+    border-top: 1px solid var(--lightred);
+}
+
+table.lightyellow tr {
+    border-bottom: 1px solid var(--lightyellow);
+    border-top: 1px solid var(--lightyellow);
+}
+
+#cover {
+    background: black;
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navigation_list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navigation_list li a {
+    color: black;
+    display: block;
+    padding: calc((40px - 1em) / 2) 0px calc((40px - 1em) / 2) 20px;
+    text-decoration: none;
+}
+
+#navigation_list li a:hover, #navigation_list li a:active {
+    background: var(--darkwhite);
+}
+
+#navigation_list .here > a {
+    background: var(--darkwhite);
+    color: var(--gray);
+    cursor: default;
+}
+
+#subject {
+    border-bottom: 2px solid var(--blue);
+    font-size: 2em;
+    margin: 20px var(--content_margin_lr) 40px;
+    width: calc(100% - 2 * var(--content_margin_lr));
+}
+
+#table_of_contents {
+    color: black;
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+#table_of_contents li a {
+    padding-left: 40px;
+}
+
+#title {
+    color: white;
+    display: block;
+    font-size: 20px;
+    left: 40px;
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+    transform: translateY(-50%);
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle_open, #toggle_close {
+    display: block;
+    height: 40px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 40px;
+}
+
+#toggle_open span, #toggle_open::before, #toggle_open::after {
+    border-bottom: 2px solid white;
+    content: "";
+    left: 11px;
+    position: absolute;
+    top: calc(40px / 2 - 1px);
+    width: 18px;
+}
+
+#toggle_open::before {
+    transform: translateY(-5px);
+}
+
+#toggle_open::after {
+    transform: translateY(5px);
+}
+
+#toggle:checked ~ #cover {
+    display: block;
+    opacity: 0.25;
+}
+
+#toggle_close::before, #toggle_close::after {
+    border-bottom: 2px solid black;
+    content: "";
+    left: 11px;
+    position: absolute;
+    top: calc(40px / 2 - 1px);
+    width: 18px;
+}
+
+#toggle_close::before {
+    transform: rotate(45deg);
+}
+
+#toggle_close::after {
+    transform: rotate(-45deg);
+}
+
+#toggle:checked ~ nav {
+    transform: translateX(100%);
+}
+
+#top_image {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#top_image img {
+    border-radius: var(--image_border_radius);
+    height: var(--image_height);
+    object-fit: cover;
+    width: var(--image_width);
+}
+
+#top_image small {
+    display: block;
+    padding-top: 6px;
+}
+
+.alert {
+    background-color: var(--background_red);
+    border-radius: 10px;
+    margin: 20px calc(var(--content_margin_lr) - 10px) 30px;
+    padding: 10px;
+    width: calc(100% - 2 * var(--content_margin_lr));
+}
+
+.alert h2, .alert h3 {
+    margin-top: 0px;
+}
+
+.centering {
+    text-align: center;
+}
+
+.content {
+    margin: 20px var(--content_margin_lr) 40px;
+}
+
+.alert h2, .alert h3, .content h2, .content h3  {
+    font-weight: normal;
+}
+
+.alert h3, .content h3 {
+    margin-bottom: 0.5em;
+}
+
+.logo {
+    display: block;
+    height: 30px;
+    padding: 15px;
+    width: 30px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.table_header {
+    margin: 10px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.table_header ~ td > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table_header ~ td > div > span {
+    display: block;
+    margin: 10px;
+}
