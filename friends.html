@@ -24,8 +24,8 @@ https://opensource.org/licenses/mit-license.php
                 <ul id="navigation_list">
                     <li><a href="index.html">メインページ</a></li>
                     <li><a href="about.html">自己紹介</a></li>
-                    <li class="here"><a>友達紹介</a>
-                        <ul id="table_of_contents">
+                    <li id="here"><a href="#top">友達紹介</a>
+                        <ul>
                             <li><a href="#group_a">グループA</a></li>
                             <li><a href="#group_b">グループB</a></li>
                             <li><a href="#group_c">グループC</a></li>
@@ -37,17 +37,15 @@ https://opensource.org/licenses/mit-license.php
                 </ul>
             </nav>
         </header>
-        <div id="subject">
-            友達紹介
-        </div>
-        <div class="content" id="group_a">
-            <h2 class="lightred">グループA</h2>
+        <h1 id="subject">友達紹介</h1>
+        <div class="content red" id="group_a">
+            <h2>グループA</h2>
             <p>数字が並んでいます。</p>
             <h3>小さい数</h3>
-            <table class="lightred">
+            <table class="enumerate">
                 <tbody>
                     <tr>
-                        <td class="table_header">～10</td>
+                        <td>～10</td>
                         <td>
                             <div>
                                 <span>2(1の次)</span>
@@ -57,7 +55,7 @@ https://opensource.org/licenses/mit-license.php
                         </td>
                     </tr>
                     <tr>
-                        <td class="table_header">～20</td>
+                        <td>～20</td>
                         <td>
                             <div>
                                 <span>13(12の次)</span>
@@ -69,14 +67,14 @@ https://opensource.org/licenses/mit-license.php
                 </tbody>
             </table>
         </div>
-        <div class="content" id="group_b">
-            <h2 class="lightyellow">グループB</h2>
+        <div class="content yellow" id="group_b">
+            <h2>グループB</h2>
             <p>数字が並んでいます。一番の仲良しは26です。</p>
             <h3>ちょっと大きい数</h3>
-            <table class="lightyellow">
+            <table class="enumerate">
                 <tbody>
                     <tr>
-                        <td class="table_header">～30</td>
+                        <td>～30</td>
                         <td>
                             <div>
                                 <span>23(24の前)</span>
@@ -86,7 +84,7 @@ https://opensource.org/licenses/mit-license.php
                         </td>
                     </tr>
                     <tr>
-                        <td class="table_header">～40</td>
+                        <td>～40</td>
                         <td>
                             <div>
                                 <span>35(36の前)</span>
@@ -99,14 +97,14 @@ https://opensource.org/licenses/mit-license.php
                 </tbody>
             </table>
         </div>
-        <div class="content" id="group_c">
-            <h2 class="lightgreen">グループC</h2>
+        <div class="content green" id="group_c">
+            <h2>グループC</h2>
             <p>数字が並んでいます。グループAと同じです。</p>
             <h3>小さい数</h3>
-            <table class="lightgreen">
+            <table class="enumerate">
                 <tbody>
                     <tr>
-                        <td class="table_header">～10</td>
+                        <td>～10</td>
                         <td>
                             <div>
                                 <span>2(1の次)</span>
@@ -116,7 +114,7 @@ https://opensource.org/licenses/mit-license.php
                         </td>
                     </tr>
                     <tr>
-                        <td class="table_header">～20</td>
+                        <td>～20</td>
                         <td>
                             <div>
                                 <span>13(12の次)</span>
@@ -128,14 +126,14 @@ https://opensource.org/licenses/mit-license.php
                 </tbody>
             </table>
         </div>
-        <div class="content" id="group_d">
-            <h2 class="lightblue">グループD</h2>
+        <div class="content blue" id="group_d">
+            <h2>グループD</h2>
             <p>数字が並んでいます。</p>
             <h3>大きい数</h3>
-            <table class="lightblue">
+            <table class="enumerate">
                 <tbody>
                     <tr>
-                        <td class="table_header">100～</td>
+                        <td>100～</td>
                         <td>
                             <div>
                                 <span>155</span>
@@ -144,7 +142,7 @@ https://opensource.org/licenses/mit-license.php
                         </td>
                     </tr>
                     <tr>
-                        <td class="table_header">1000～</td>
+                        <td>1000～</td>
                         <td>
                             <div>
                                 <span>1512</span>
@@ -157,16 +155,16 @@ https://opensource.org/licenses/mit-license.php
                 </tbody>
             </table>
         </div>
-        <div class="content" id="group_e">
-            <h2 class="lightgray">グループE</h2>
+        <div class="content gray" id="group_e">
+            <h2>グループE</h2>
             <p>数字が並んでいます。</p>
             <h3>もっと大きい数</h3>
             <span>12414</span>
             <h3>さらに大きい数</h3>
-            <table class="lightgray">
+            <table class="enumerate">
                 <tbody>
                     <tr>
-                        <td class="table_header"></td>
+                        <td></td>
                         <td>
                             <div>
                                 <span>153516</span>
@@ -179,11 +177,11 @@ https://opensource.org/licenses/mit-license.php
             </table>
         </div>
         <footer>
-            <div id="logos">
-                <a href="index.html" target="_blank" class="logo"><img src="image/facebook_logo.png"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/instagram_logo.png"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/twitter_logo.svg"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/youtube_logo.png"></a>
+            <div>
+                <a href="index.html" target="_blank"><img src="image/facebook_logo.png"></a>
+                <a href="index.html" target="_blank"><img src="image/instagram_logo.png"></a>
+                <a href="index.html" target="_blank"><img src="image/twitter_logo.svg"></a>
+                <a href="index.html" target="_blank"><img src="image/youtube_logo.png"></a>
             </div>
             <small>mail: <address>john.doe(at)example.com</address></small>
         </footer>

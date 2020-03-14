@@ -22,9 +22,11 @@ https://opensource.org/licenses/mit-license.php
             <nav>
                 <label for="toggle" id="toggle_close"><span></span></label>
                 <ul id="navigation_list">
-                    <li class="here"><a>メインページ</a>
-                        <ul id="table_of_contents">
+                    <li id="here"><a href="#top">メインページ</a>
+                        <ul>
+                            <li class="alert"><a href="#alert">緊急</a></li>
                             <li><a href="#whats_new">更新情報</a></li>
+                            <li><a href="#about">このサイト何？</a></li>
                         </ul>
                     </li>
                     <li><a href="about.html">自己紹介</a></li>
@@ -37,7 +39,7 @@ https://opensource.org/licenses/mit-license.php
             <img src="image/top.png">
             <small>↑力こそパワーじゃん</small>
         </div>
-        <div class="alert">
+        <div class="alert" id="alert">
             <h2>緊急</h2>
             <p>大変です！近所のコロッケ屋さんが潰れちゃう！詳しくは<a href="index.html">こちら</a>。</p>
         </div>
@@ -51,12 +53,17 @@ https://opensource.org/licenses/mit-license.php
                     <dd><a href="index.html">イベント情報を追加しました！</a></dd>
             </dl>
         </div>
+        <div class="content" id="about">
+            <h2>このサイト何？</h2>
+            <p>このサイトはウェブデザインの練習のために制作したものです。JavaScriptをあえて使わない方針で作りました。</p>
+            <p>また、このサイトはMITライセンスとなっています。</p>
+        </div>
         <footer>
-            <div id="logos">
-                <a href="index.html" target="_blank" class="logo"><img src="image/facebook_logo.png"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/instagram_logo.png"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/twitter_logo.svg"></a>
-                <a href="index.html" target="_blank" class="logo"><img src="image/youtube_logo.png"></a>
+            <div>
+                <a href="index.html" target="_blank"><img src="image/facebook_logo.png"></a>
+                <a href="index.html" target="_blank"><img src="image/instagram_logo.png"></a>
+                <a href="index.html" target="_blank"><img src="image/twitter_logo.svg"></a>
+                <a href="index.html" target="_blank"><img src="image/youtube_logo.png"></a>
             </div>
             <small>mail: <address>john.doe(at)example.com</address></small>
         </footer>
